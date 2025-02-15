@@ -1,0 +1,17 @@
+
+[tool.poetry]
+name = "gas-prices"
+version = "0.1.0"
+description = "Easily fetch latest Gas prices at any location"
+authors = ["nishantapatil3 <nishant.apatil3@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+gql = "^3.5.0"
+aiohttp = "^3.11.12"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
