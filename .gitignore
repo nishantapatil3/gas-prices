@@ -1,0 +1,9 @@
+.idea
+*/__pycache__/*
+*/.pytest_cache/*
+*/.vscode/*
+*/.mypy_cache/*
+*/.pytest_cache/*
+*/.coverage
+*/.coverage.*
+*/.mypy
