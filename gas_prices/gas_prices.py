@@ -1,6 +1,6 @@
 from gql import gql, Client
 from gql.transport.aiohttp import AIOHTTPTransport
-from config import URL, QUERY_STATION_ID, QUERY_PRICES
+from gas_prices.config import URL, QUERY_STATION_ID, QUERY_PRICES
 
 class GasPrices:
     def __init__(self, url=URL):
@@ -26,4 +26,6 @@ class GasPrices:
         }
 
         response = self.client.execute(query, variable_values=variables)
-        return response
+
+        regular_price_today = response["station"]["prices"][0]["credit"]["price"]
+        return regular_price_today
