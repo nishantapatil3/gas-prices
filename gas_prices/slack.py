@@ -9,7 +9,7 @@ def send_slack_message(message):
 
     # Send a message
     client.chat_postMessage(
-        channel="ring",
+        channel="gas-prices",
         text=message,
         username="rpi",
     )
