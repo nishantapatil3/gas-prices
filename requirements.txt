@@ -1,0 +1,4 @@
+gql
+aiohttp
+slack-sdk
+python-dotenv
