@@ -2,3 +2,4 @@ gql
 aiohttp
 slack-sdk
 python-dotenv
+influxdb3-python
